@@ -1,0 +1,181 @@
+body. ul. li. h1. h2. a{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+header{
+    background-color: #fa0b0b;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+header h1{
+    color: white;
+    border: 6px solid white;
+    padding: 2px 8px;
+    display: inline-block;
+    border-radius: 36px;
+    margin: 8px;
+    font-size: 30px;
+}
+.banner {
+    position: relative;
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    position: absolute;
+    color: white;
+    background-color: #feb614;
+    padding: 10px;
+    left: 0px;
+    top: 30%;
+}
+.banner h2{
+    font-size: 54px;
+}
+.banner h2 span{
+    font-size: 1.3em;
+}
+nav{
+    background-color: #F4F4F4;
+    padding: 2px;
+    position: sticky;
+    top: 65px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: #4B4B4B;
+}
+nav li a.join{
+    color: #fa0b0b;
+}
+main{
+    max-width: 100%;
+    width: 900px;
+    margin: 80px auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+article h2{
+    font-size: 48px;
+    color: #F63232;
+}
+article p{
+    color: #4B4B4B;
+    line-height: 1.6em;
+}
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+    padding: 0;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+.images li img{
+    max-width: 100%;
+}
+.join-footer{
+    background-color: #F4F4F4;
+    color: #4B4B4B;
+    text-align: center;
+    padding: 60px 20px;
+}
+.join-footer h2{
+    font-size: 36px;
+}
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+footer{
+    padding: 10px;
+    color: white;
+    background-color: #fa0b0b;
+    text-align: center;
+}
+
+/* pseudo classes and focus effect */
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.images li:hover{
+    position: relative;
+    bottom: 4px;
+}
+form input:focus{
+    border: 4px dashed #4B4B4B;
+    outline: none;
+}
+form input:valid{
+    border: 4px solid greenyellow;
+}
+p::selection{
+    background-color: #F63232;
+    color: white;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 1000px){
+    .banner .welcome h2{
+        font-size: 40px;
+    }
+    nav li{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 800px){
+    .banner .welcome h2{
+        font-size: 32px;
+    }
+    .images li{
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width: 560px){
+    .banner .welcome{
+        position: relative;
+        padding: 2px;
+        text-align: center;
+    }
+    .banner .welcome h2{
+        font-size: 24px;
+    }
+    .welcome br{
+        display: none;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 420px){
+    nav li{
+        font-size: 12px;
+    }
+}
